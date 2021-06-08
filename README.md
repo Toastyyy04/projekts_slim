@@ -1,3 +1,3 @@
 # Flask template
-## Autors: Māris Danne
+## Autors: Platon Martyonv, Deniss Userdnijs, Artjoms Sennikovs
 - Sākums
