@@ -11,8 +11,8 @@
 
 
    .block1 {
-   	width: 1750px;
-      height: 900px;
+   	width: 90%;
+      height: 100%;
    	background: #f0f0f0;
    	padding: 0px;
    	background-color: #ebebeb;
@@ -35,7 +35,7 @@
 
 
 
-   <!----------TOP-BAR----------->
+ 
    
    body {
    	margin: 0;
@@ -46,7 +46,6 @@
    .header {
    	background-color: #9c9c9c;
    	padding: 20px;
-   	text-align: ;
    }
 
    #navbar {
@@ -97,3 +96,23 @@
       border-radius: 5px;
       background: #C4C4C4;
     }
+
+   .topnav-right {
+      float: right;
+   }
+
+   * {box-sizing: border-box}
+
+
+
+   .car_box{
+      width: 749px;
+      height: 370px;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+   }
+
+   .block20{
+      width: 200px;
+      height: 93px;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+   }
