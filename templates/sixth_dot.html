@@ -4,9 +4,55 @@
 <head>
 	<meta charset="UTF-8" />
 	<title>Autonoma*</title>
-	<link rel="stylesheet" type="text/css" href="style.css" />
+	<link rel="stylesheet" type="text/css" href="static/css/style.css" />
 </head>
 <style>
+
+    .sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #008c8c;
+    overflow-x: hidden;
+    transition: 0.4s;
+    padding-top: 100px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    font-family: ;
+    font-weight: 100px;
+    font-size: 25px;
+   }
+
+   .sidenav a {
+    padding: 10px 10px 16px 10px;
+    text-decoration: none;
+    font-size: 18px;
+    color: #265C55;
+    display: block;
+    transition: 0.4s;
+   }
+
+   .sidenav a:hover {
+    color: #9c9c9c;
+   }
+
+   .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+   }
+   @media screen and (max-height: 450px) {
+      .sidenav {
+      padding-top: 15px;
+      }
+      .sidenav a {
+      font-size: 18px;
+      }
+   }
 
 
 </style>
@@ -23,24 +69,84 @@
 
 
 <div id="navbar">
-	<a href="index.html">CAR4R3NT</a>
+	<a href="/">CAR4R3NT</a>
 
-<a href="Kā rezervēt automašīnu.html">Kā rezervēt automašīnu</a>
-<a href="Autonomas automašīnas.html">Autonomas automašīnas</a>
-<a href="Autonomas noteikumi.html">Autonomas noteikumi</a>
-<a href="Autonomas kontakti.html">Autonomas kontakti</a>
-<a href="Autonomas cenas.html">Autonomas cenas</a>
+<a href="/ka_rezervet_automasinu">Kā rezervēt automašīnu</a>
+<a href="/autonomas_automasinas">Autonomas automašīnas</a>
+<a href="/autonomas_noteikumi">Autonomas noteikumi</a>
+<a href="/autonomas_kontakti">Autonomas kontakti</a>
 
+  
 <div class="topnav-right">
-	<a href="Log-in.">Log in</a>
+  <a href="/reservacija">Reservācija</a>
+	<a href="/log_in">Log in</a>
 </div>
-
 </div></br>
 
+	<div id="mySidenav" class="sidenav">
+		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+		<ul>
+			<li><a href="#">
+					<font color="#fff" title="processing..."><big>Vieglie&nbspauto</big></font>
+				</a></li>
+			<li><a href="#">
+					<font color="#fff" title="processing..."><big>Kravas&nbspauto</big></font>
+				</a></li>
+			<li><a href="#">
+					<font color="#fff" title="processing..."><big>Nomas&nbspautoparks</big></font>
+				</a></li>
+			<li><a href="#">
+					<font color="#fff" title="processing..."><big>Nomas&nbsppunkti</big></font>
+				</a></li>
+			<li><a href="#">
+					<font color="#fff" title="processing..."><big>Auto&nbsplīzings</big></font>
+				</a></li>
+			<li><a href="#">
+					<font color="#fff" title="processing..."><big>Lietoti&nbspauto</big></font>
+				</a></li>
+			<li><a href="#">
+					<font color="#fff" title="processing..."><big>Citi&nbspnomas&nbsppakalpojumi</big></font>
+				</a></li>
+		</ul>
+	</div>
+
+	<span style="font-size:30px;cursor:pointer" onclick="openNav()">
+		<font style="position:absolute;
+		left:20px; top:120px" size="100">&#9776;
+	</span></font>
+
+	<script type="text/javascript">
+		function openNav() {
+			document.getElementById("mySidenav").style.width = "300px";
+		}
+
+		function closeNav() {
+			document.getElementById("mySidenav").style.width = "0";
+		}
+
+		window.onscroll = function () {
+			myFunction()
+		};
+
+		var navbar = document.getElementById("navbar");
+		var sticky = navbar.offsetTop;
+
+		function myFunction() {
+			if (window.pageYOffset >= sticky) {
+				navbar.classList.add("sticky")
+			} else {
+				navbar.classList.remove("sticky");
+			}
+		}
+	</script>
+
+	<span style="font-size:30px;cursor:pointer" onclick="openNav()">
+		<font style="position:absolute;
+		left:20px; top:120px" size="100">&#9776;
+	</span></font>
 
 
-
-				<img src="16.png" width="710" height="405" hspace="60" style="position:absolute;
+				<img src="static/img/16.png" width="710" height="405" hspace="60" style="position:absolute;
 				left:140px; top:420px"><br><br>
 
 				<h1>
@@ -80,16 +186,16 @@
 			</div>
 	<div class="block10" style="position:absolute; left:131px; top:775px" color="red" width="710" height="405">
 	</br></br>		
-	<h3 style="position:absolute; left:35px; top:38px">BMW M4 Copmetition 2021</h3>
-	<h3 style="position:absolute; left:580px; top:38px">NO 180€ dienā</h3></h3>
+	<h6 style="position:absolute; left:35px; top:38px">Porsche Cayman GT4</h6>
+	<h6 style="position:absolute; left:580px; top:38px">NO 180€ dienā</h6>
 	</div>
 
-<a href="index.html"><div id="circle" style="position:absolute; left:380px; top:890px"> </div></a>
-<a href="second_dot.html"><div id="circle" style="position:absolute; left:410px; top:890px"> </div></a>
-<a href="third_dot.html"><div id="circle" style="position:absolute; left:440px; top:890px"></div></a>
-<a href="fourth_dot.html"><div id="circle" style="position:absolute; left:470px; top:890px"> </div></a>
-<a href="fifth_dot.html"><div id="circle" style="position:absolute; left:500px; top:890px"> </div></a>
-<a href="sixth_dot.html"><div id="circle" style="position:absolute; left:530px; top:890px"> </div></a>
+<a href="/"><div id="circle" style="position:absolute; left:380px; top:890px"> </div></a>
+<a href="/second_dot"><div id="circle" style="position:absolute; left:410px; top:890px"> </div></a>
+<a href="/third_dot"><div id="circle" style="position:absolute; left:440px; top:890px"></div></a>
+<a href="/fourth_dot"><div id="circle" style="position:absolute; left:470px; top:890px"> </div></a>
+<a href="/fifth_dot"><div id="circle" style="position:absolute; left:500px; top:890px"> </div></a>
+<a href="/sixth_dot"><div id="circle" style="position:absolute; left:530px; top:890px"> </div></a>
 
 	<p class="dline"><font face="Trebuchet MS" size="4" style="position:absolute; left:1430px; top:860px">
 	Tālr.: +371 29666000 (visu diennakti)</br>

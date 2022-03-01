@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="lv">
+
+{% block head %}
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="static/css/style.css" href="static/js/script.js"/>
+    <title>Autonoma</title>
+    <style>
+#meklet {
+    position: absolute;
+    width: 500px;
+    height: 25px;
+    border: 1px solid black;
+    outline: none;
+    font-family: Sans-serif;
+    font-size: 20px;
+    left: 150px;
+    top: 8%;
+    background: url(https://cdn.discordapp.com/attachments/758385365912125571/846713481847504936/unknown.png) no-repeat 98% 1px;
+    background-color:#ffffff;
+}
+
+#meklesana {
+    position: fixed;
+    left: 600px;
+    top: 80px;
+}
+
+#topButtons {
+    position: fixed;
+    left: 600px;
+    top: 80px;
+}
+
+#mekletArstu2 {
+    position: fixed;
+    border-radius: 20px;
+    border: 1px solid black;
+    width: 180px;
+    height: 35px;
+    font-size: 20px;
+    top: 135px;
+    left: 750px;
+    
+}
+
+#pieteiktViziti2 {
+    position: fixed;
+    border-radius: 20px;
+    border: 1px solid black;
+    width: 140px;
+    height: 35px;
+    font-size: 20px;
+    top: 135px;
+    left: 1120px;
+    
+}
+
+#mekletViziti2 {
+    position: fixed;
+    border-radius: 20px;
+    border: 1px solid black;
+    width: 180px;
+    height: 35px;
+    font-size: 20px;
+    top: 135px;
+    left: 935px
+}
+
+#ieietPortala {
+    position: fixed;
+    width: 180px;
+    height: 35px;
+    border-radius: 20px;
+    border: 1px solid black;
+    font-family: Sans-serif;
+    font-size: 20px;
+    left: 1715px;
+    top: 135px;
+}
+
+#virsraksts {
+    position: fixed;
+    left: 300px;
+    top: 20px;
+    font-family: Sans-serif;
+    font-size: 24px;
+}
+
+#login {
+    position: absolute;
+    width: 300px;
+    height: 29px;
+    border: 1px solid black;
+    outline: none;
+    background: white;
+    font-family: Sans-serif;
+    font-size: 20px;
+    top: 8%;
+    left: 1000px;
+    font-size: 20px;
+}
+
+
+h2 {
+    position: absolute;
+	top	: 0;
+	left: 250px;
+	width: 100%;
+    color: #af0202;
+    font-size: 20px;
+    font-family: Sans-serif;
+}
+
+.intro {
+    width: 100%;
+    height: 100vh;
+    max-width: 1920px;
+}
+
+#top_background {
+    right: 50px;
+    background-color: #DE8706;
+    width: 100%;
+    height: 210px;
+}
+
+#vards_uzvards_teksts {
+    position: fixed;
+    left: 45px;
+    top: 230px;
+    font-size: 26px;
+}
+
+#darba_laiks_teksts {
+    position: fixed;
+    left: 45px;
+    top: 320px;
+    font-size: 26px;
+}
+
+#darbibas_joma_teksts {
+    position: fixed;
+    left: 550px;
+    top: 230px;
+    font-size: 26px;
+}
+
+#slimnica_teksts {
+    position: fixed;
+    left: 550px;
+    top: 320px;
+    font-size: 26px;
+}
+
+#hr2 {
+    position: fixed;
+    width: 100%;
+    left: 0px;
+    top: 440px;
+}
+
+#hr3 {
+    position: fixed;
+    width: 100%;
+    left: 0px;
+    top: 450px;
+}
+
+#pievienot2{
+    position: fixed;
+    width: 110px;
+    height: 35px;
+    border-radius: 20px;
+    border: 1px solid black;
+    font-family: Sans-serif;
+    font-size: 20px;
+    left: 1030px;
+    top: 376px;
+}
+
+input#vards_uzvards_ievade {
+    position: absolute;
+    width: 400px;
+    height: 25px;
+    border: 1px solid black;
+    outline: none;
+    font-family: Sans-serif;
+    font-size: 20px;
+    left: 45px;
+    top: 300px;
+    background-color:#ffffff;
+}
+
+input#darba_laiks_ievade {
+    position: absolute;
+    width: 400px;
+    height: 25px;
+    border: 1px solid black;
+    outline: none;
+    font-family: Sans-serif;
+    font-size: 20px;
+    left: 45px;
+    top: 390px;
+    background-color:#ffffff;
+}
+
+input#darbibas_joma_ievade {
+    position: absolute;
+    width: 400px;
+    height: 25px;
+    border: 1px solid black;
+    outline: none;
+    font-family: Sans-serif;
+    font-size: 20px;
+    left: 550px;
+    top: 300px;
+    background-color:#ffffff;
+}
+
+input#slimnica_ievade {
+    position: absolute;
+    width: 400px;
+    height: 25px;
+    border: 1px solid black;
+    outline: none;
+    font-family: Sans-serif;
+    font-size: 20px;
+    left: 550px;
+    top: 390px;
+    background-color:#ffffff;
+}
+
+#jaunaPoga2 {
+    display: none;
+    position: fixed;
+    border-radius: 20px;
+    border: 1px solid black;
+    width: 170px;
+    height: 35px;
+    font-size: 20px;
+    top: 200px;
+    left: 30px;
+}
+
+#popUp2 {
+    z-index: 1;
+    font-size: 30px;
+    font-family: Sans-serif;
+}
+
+.loads2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid black;
+    font-family: Sans-serif;
+    border-radius: 15px;
+    height: 300px;
+    width: 300px;
+    padding: 15px;
+    margin: 10px;
+    background-color: #DE8706;
+}
+
+#info2 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+#dzest2 {
+    text-align: center;
+    border: 2px solid black;
+    font-family: Sans-serif;
+    border-radius: 15px;
+    height: 30px;
+    width: 90px;
+    font-size: 15px;
+}
+
+#linijas {
+    margin-top: 210px;
+}
+
+#second {
+    margin-top: -5px;
+}
+
+#nosaukums {
+    position: fixed;
+    font-weight: bold;
+    left: 300px;
+    top: 0px;
+    font-size: 50px;
+}
+    </style>
+
+{% endblock %}
+
+{% block body %}
+
+<div id="navbar">
+	<a href="/index">CAR4R3NT</a>
+
+<a href="/ka_rezervet_automasinu">Kā rezervēt automašīnu</a>
+<a href="/autonomas_automasinas">Autonomas automašīnas</a>
+<a href="/autonomas_noteikumi">Autonomas noteikumi</a>
+<a href="/autonomas_kontakti">Autonomas kontakti</a>
+
+
+<div class="topnav-right">
+	<a href="/log_in">Log in</a>
+</div>
+</div></br></br></br>
+
+    <div id='top_background'></div>
+
+    <div id='intro'>
+        <img id='logo' alt="logo" />
+        <div id='virsraksts'>
+            <p id="nosaukums">
+                <a href="administratora_lapa.html" style="text-decoration: none; color: black;">Projekts <br> "Medicīna"</a>
+            </p>
+            <div id ='topButtons'>
+                <button id='mekletArstu2'>
+                    <a href="pievienot_slimnicu.html" style="text-decoration: none; color: black;">Pievienot slimnīcu</a>
+                </button>
+                <button id='pieteiktViziti2'>
+                    <a href="statistika.html" style="text-decoration: none; color: black;">Statistika</a>
+                </button>
+                <button id='mekletViziti2'>
+                    <a href="pievienot_arstu.html" style="text-decoration: none; color: black;">Pievienot ārstu</a>
+                </button>
+                <button id='ieietPortala'>
+                    <a href="index2.html" style="text-decoration: none; color: black;">Iziet no portālā</a>
+                </button>
+                <button id='login'>Adminisrātora portāls</button>
+                    
+            </div>
+            <form id='meklesana'>
+                <input type="text" id="meklet" placeholder="Meklēt...">
+            </form> 
+
+        </div>
+
+
+        <div id='hr'>
+            <hr>
+        </div>
+
+        <div id="poga">
+            <button id='jaunaPoga2'>Pievienot ārstu</button>
+        </div>
+
+        <div id='linijas'>
+            <hr id='first'>
+            <hr id='second'>
+        </div>
+
+        <div id="popUp2">
+            <form id="form">
+                <p id='vards_uzvards_teksts'>Vārds, uzvārds:</p>
+                <p id='darba_laiks_teksts'>Darba laiks:</p>
+                <p id='darbibas_joma_teksts'>Darbības joma:</p>
+                <p id='slimnica_teksts'>Slimnīca:</p>
+                <input type="text" id="vards_uzvards_ievade">
+                <input type="text" id="darba_laiks_ievade">
+                <input type="text" id="darbibas_joma_ievade">
+                <input type="text" id="slimnica_ievade">
+                <button type="button" id="pievienot2">Pievienot</button>
+            </form>
+        </div>
+
+    <div id="info2">
+    </div>
+
+</div>
+
+ <script src="static/js/script.js"></script>
+
+{% endblock %}
+
+</html>

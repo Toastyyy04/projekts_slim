@@ -32,11 +32,6 @@
    	font-family: sans-serif;
    }
 
-
-
-
- 
-   
    body {
    	margin: 0;
    	font-size: 30px;
@@ -104,7 +99,6 @@
    * {box-sizing: border-box}
 
 
-
    .car_box{
       width: 749px;
       height: 370px;
@@ -115,4 +109,52 @@
       width: 200px;
       height: 93px;
       box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+   }
+
+      .sidenav {
+      height: 100%;
+      width: 0;
+      position: fixed;
+      z-index: 1;
+      top: 0;
+      left: 0;
+      background-color: #008c8c;
+      overflow-x: hidden;
+      transition: 0.4s;
+      padding-top: 100px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+      font-family: ;
+      font-weight: 100px;
+      font-size: 25px;
+   }
+
+   .sidenav a {
+      padding: 10px 10px 16px 10px;
+      text-decoration: none;
+      font-size: 18px;
+      color: #265C55;
+      display: block;
+      transition: 0.4s;
+   }
+
+   .sidenav a:hover {
+      color: #9c9c9c;
+   }
+
+   .sidenav .closebtn {
+      position: absolute;
+      top: 0;
+      right: 25px;
+      font-size: 36px;
+      margin-left: 50px;
+   }
+
+   @media screen and (max-height: 450px) {
+      .sidenav {
+         padding-top: 15px;
+      }
+
+      .sidenav a {
+         font-size: 18px;
+      }
    }
